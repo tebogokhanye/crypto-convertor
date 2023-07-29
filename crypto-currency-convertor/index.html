@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Converter</h1>
+        <div class="converter">
+            <label for="inputCurrency">From:</label>
+            <select id="inputCurrency">
+             
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="BNB">Binance Coin (BNB)</option>
+                <option value="ADA">Cardano (ADA)</option>
+                <option value="XRP">Ripple (XRP)</option>
+            </select><br/>
+            <label for="outputCurrency">To:</label>
+            <select id="outputCurrency">
+             
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="BNB">Binance Coin (BNB)</option>
+                <option value="ADA">Cardano (ADA)</option>
+                <option value="XRP">Ripple (XRP)</option>
+            </select>
+            <div class="amount-container">
+                <input type="number" id="amount" placeholder="Enter amount">
+                <button onclick="convert()">Convert</button>
+            </div>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
